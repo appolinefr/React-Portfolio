@@ -1,5 +1,9 @@
 import React from "react";
 import appoline from "../../images/aboutPic.jpeg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
 
 const styles = {
   badge: {
@@ -39,20 +43,36 @@ export default function About() {
           <div className="container-fluid">
             <h1 className="p-4 text-center ">My Skills</h1>
             <div className="container  text-center ">
-              <span className="badge p-3 m-1 fs-6" style={styles.badge}>HTML</span>
-              <span className="badge p-3 m-1 fs-6" style={styles.badge}>CSS</span>
+              <span className="badge p-3 m-1 fs-6" style={styles.badge}>
+                HTML
+              </span>
+              <span className="badge p-3 m-1 fs-6" style={styles.badge}>
+                CSS
+              </span>
               <span className="badge p-3 m-1 fs-6" style={styles.badge}>
                 Javascript
               </span>
-              <span className="badge p-3 m-1 fs-6" style={styles.badge}>Git</span>
-              <span className="badge text-bg-secondary p-3 m-1 fs-6">GitHub</span>
-              <span className="badge text-bg-secondary p-3 m-1 fs-6">Heroku</span>
-              <span className="badge text-bg-secondary p-3 m-1 fs-6">React</span>
-              <span className="badge text-bg-secondary p-3 m-1 fs-6">Node.js</span>
+              <span className="badge p-3 m-1 fs-6" style={styles.badge}>
+                Git
+              </span>
+              <span className="badge text-bg-secondary p-3 m-1 fs-6">
+                GitHub
+              </span>
+              <span className="badge text-bg-secondary p-3 m-1 fs-6">
+                Heroku
+              </span>
+              <span className="badge text-bg-secondary p-3 m-1 fs-6">
+                React
+              </span>
+              <span className="badge text-bg-secondary p-3 m-1 fs-6">
+                Node.js
+              </span>
               <span className="badge text-bg-secondary p-3 m-1 fs-6">
                 Express.js
               </span>
-              <span className="badge text-bg-secondary p-3 m-1 fs-6">MongoDB</span>
+              <span className="badge text-bg-secondary p-3 m-1 fs-6">
+                MongoDB
+              </span>
               <span className="badge text-bg-secondary p-3 m-1 fs-6">SQL</span>
               <span className="badge text-bg-secondary p-3 m-1 fs-6">
                 Sequelize
@@ -62,56 +82,35 @@ export default function About() {
           </div>
         </div>
       </div>
-       <footer class="text-center text-white">
+      <footer class="text-center text-white mt-3">
         <div class="container pt-4">
           <section class="mb-4">
             <a
               class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
+              href="https://www.linkedin.com/in/appoline-cogan-91b777236/"
+              target="blank"
               role="button"
               data-mdb-ripple-color="dark"
             >
-              <i class="fab fa-facebook-f"></i>
+              <FontAwesomeIcon icon={faLinkedin} />
             </a>
             <a
               class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
+              href="https://github.com/appolinefr"
+              target="blank"
               role="button"
               data-mdb-ripple-color="dark"
             >
-              <i class="fab fa-twitter"></i>
+              <FontAwesomeIcon icon={faGithub} />
             </a>
             <a
               class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
+              href="mailto:appolinecogan@gmail.com"
+              target="blank"
               role="button"
               data-mdb-ripple-color="dark"
             >
-              <i class="fab fa-google"></i>
-            </a>
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-            >
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-            >
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-            >
-              <i class="fab fa-github"></i>
+              <FontAwesomeIcon icon={faEnvelope} />
             </a>
           </section>
         </div>
