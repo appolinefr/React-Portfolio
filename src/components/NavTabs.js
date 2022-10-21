@@ -3,8 +3,11 @@ import appoline from "../../src/images/AppolineNav.png";
 
 const styles = {
   nav: {
-    background: "",
-  },
+    backgroundColor: "#",
+  },  
+  navLinks: {
+   color: "#"
+  }
 };
 
 function NavTabs({ currentPage, handlePageChange }) {
@@ -13,11 +16,11 @@ function NavTabs({ currentPage, handlePageChange }) {
       <div className="container">
         <a
           className="navbar-brand"
-          href="#home"
-          onClick={() => handlePageChange("Home")}
+          href="#about"
+          onClick={() => handlePageChange("About")}
         >
           <img src={appoline} alt="Appoline Cogan" height="60" />
-          <span className="m-4 fs-4">Appoline Cogan</span>
+          <span className="m-4 fs-4" style={styles.navLinks}>Appoline Cogan</span>
         </a>
         <button
           className="navbar-toggler"
@@ -32,17 +35,6 @@ function NavTabs({ currentPage, handlePageChange }) {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto">
-            <li className="nav-item fs-5 mx-2">
-              <a
-                href="#home"
-                onClick={() => handlePageChange("Home")}
-                className={
-                  currentPage === "Home" ? "nav-link active" : "nav-link"
-                }
-              >
-                Home
-              </a>
-            </li>
             <li className="nav-item fs-5 mx-2">
               <a
                 href="#about"
@@ -74,6 +66,17 @@ function NavTabs({ currentPage, handlePageChange }) {
                 }
               >
                 Contact
+              </a>
+            </li>
+            <li className="nav-item fs-5 mx-2">
+              <a
+                href="#resume"
+                onClick={() => handlePageChange("Resume")}
+                className={
+                  currentPage === "Resume" ? "nav-link active" : "nav-link"
+                }
+              >
+                Resume
               </a>
             </li>
           </ul>

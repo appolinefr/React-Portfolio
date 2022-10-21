@@ -1,61 +1,39 @@
 import React from "react";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-// https://fontawesome.com/icons/font-awesome?s=solid&f=classic
 
 export default function FooterContainer() {
   return (
     <div>
-      <footer class="text-center text-white">
-        <div class="container pt-4">
-          <section class="mb-4">
+      <footer className="text-center text-white mt-3">
+        <div className="container pt-4">
+          <section className="mb-4">
             <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
+              className="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://www.linkedin.com/in/appoline-cogan-91b777236/"
+              target="blank"
               role="button"
-              data-mdb-ripple-color="dark"
             >
-              <i class="fab fa-facebook-f"></i>
+              <FontAwesomeIcon icon={faLinkedin} />
             </a>
             <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
+              className="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://github.com/appolinefr"
+              target="blank"
               role="button"
-              data-mdb-ripple-color="dark"
             >
-              <i class="fab fa-twitter"></i>
+              <FontAwesomeIcon icon={faGithub} />
             </a>
             <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
+              className="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="mailto:appolinecogan@gmail.com"
+              target="blank"
               role="button"
-              data-mdb-ripple-color="dark"
             >
-              <i class="fab fa-google"></i>
-            </a>
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-            >
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-            >
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-            >
-              <i class="fab fa-github"></i>
+              <FontAwesomeIcon icon={faEnvelope} />
             </a>
           </section>
         </div>
