@@ -6,7 +6,11 @@ const styles = {
     backgroundColor: "#",
   },  
   navLinks: {
-   color: "#"
+   color: "#",
+   lineHeight: ""
+  },
+  navBarTitle: {
+    color: "."
   }
 };
 
@@ -20,7 +24,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           onClick={() => handlePageChange("About")}
         >
           <img src={appoline} alt="Appoline Cogan" height="60" />
-          <span className="m-4 fs-4" style={styles.navLinks}>Appoline Cogan</span>
+          <span className="m-4 fs-3">Appoline Cogan</span>
         </a>
         <button
           className="navbar-toggler"
@@ -35,7 +39,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto">
-            <li className="nav-item fs-5 mx-2">
+            <li className="nav-item fs-4 mx-2 " style={styles.navLinks}>
               <a
                 href="#about"
                 onClick={() => handlePageChange("About")}
@@ -46,7 +50,7 @@ function NavTabs({ currentPage, handlePageChange }) {
                 About
               </a>
             </li>
-            <li className="nav-item fs-5 mx-2">
+            <li className="nav-item fs-4 mx-2">
               <a
                 href="#blog"
                 onClick={() => handlePageChange("Project")}
@@ -57,7 +61,7 @@ function NavTabs({ currentPage, handlePageChange }) {
                 Projects
               </a>
             </li>
-            <li className="nav-item fs-5 mx-2">
+            <li className="nav-item fs-4 mx-2">
               <a
                 href="#contact"
                 onClick={() => handlePageChange("Contact")}
@@ -68,7 +72,7 @@ function NavTabs({ currentPage, handlePageChange }) {
                 Contact
               </a>
             </li>
-            <li className="nav-item fs-5 mx-2">
+            <li className="nav-item fs-4 mx-2">
               <a
                 href="#resume"
                 onClick={() => handlePageChange("Resume")}

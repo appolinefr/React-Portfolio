@@ -18,7 +18,7 @@ export default function Contact() {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (values) => alert("Thank you!");
+  const onSubmit = () => alert("Thank you!");
 
   return (
     <div className="container mt-5 ">
@@ -46,7 +46,6 @@ export default function Contact() {
                 <input
                   className="form-control"
                   type="text"
-                  placeholder="Email"
                   {...register("email", {
                     required: true,
                     pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,

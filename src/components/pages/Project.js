@@ -14,10 +14,10 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 export default function Project() {
   return (
     <div>
-      <section class="bgimage">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+      <section className="bgimage">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
           </div>
         </div>
       </section>
