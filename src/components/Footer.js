@@ -17,7 +17,7 @@ export default function FooterContainer() {
               target="blank"
               role="button"
             >
-              <FontAwesomeIcon icon={faLinkedin} />
+              <FontAwesomeIcon icon={faLinkedin} className="fa-xl" />
             </a>
             <a
               className="btn btn-link btn-floating btn-lg text-dark m-1"
@@ -25,7 +25,7 @@ export default function FooterContainer() {
               target="blank"
               role="button"
             >
-              <FontAwesomeIcon icon={faGithub} />
+              <FontAwesomeIcon icon={faGithub} className="fa-xl" />
             </a>
             <a
               className="btn btn-link btn-floating btn-lg text-dark m-1"
@@ -33,7 +33,7 @@ export default function FooterContainer() {
               target="blank"
               role="button"
             >
-              <FontAwesomeIcon icon={faEnvelope} />
+              <FontAwesomeIcon icon={faEnvelope} className="fa-xl" />
             </a>
           </section>
         </div>
