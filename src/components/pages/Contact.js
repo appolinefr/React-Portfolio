@@ -1,5 +1,6 @@
 import React from "react";
 import FooterContainer from "../Footer";
+import { useForm } from "react-hook-form";
 
 const styles = {
   btn: {
@@ -12,6 +13,13 @@ const styles = {
 };
 
 export default function Contact() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (values) => alert("Thank you!");
+
   return (
     <div className="container mt-5 ">
       <div className="row">
@@ -24,24 +32,33 @@ export default function Contact() {
               If you like what you see and would like to work with me, please
               fill out the form below and I will get back to you.
             </p>
-            <form>
+            <form onSubmit={handleSubmit(onSubmit)}>
               <div className="mb-3">
                 <label for="name" className="form-label">
                   Your name
                 </label>
-                <input type="email" className="form-control" />
+                <input type="text" className="form-control" required />
               </div>
               <div class="mb-3">
                 <label for="emailAddress" className="form-label">
                   Your email address
                 </label>
-                <input type="text" className="form-control" />
+                <input
+                  className="form-control"
+                  type="text"
+                  placeholder="Email"
+                  {...register("email", {
+                    required: true,
+                    pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                  })}
+                />
+                {errors.email && <span>Invalid email</span>}
               </div>
               <div class="mb-3">
                 <label for="comment" className="form-label">
                   Your message
                 </label>
-                <textarea className="form-control"></textarea>
+                <textarea className="form-control" required></textarea>
               </div>
               <button
                 type="submit"

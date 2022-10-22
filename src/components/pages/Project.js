@@ -17,9 +17,7 @@ export default function Project() {
       <section class="bgimage">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
           </div>
         </div>
       </section>
@@ -32,44 +30,45 @@ export default function Project() {
             >
               <div className="mainflip">
                 <div className="frontside">
-                  <div className="card border border-3">
-                    <h4 className="card-title mt-4">Marvel Mystery Matcher</h4>
+                  <div className="card">
+                    <h4 className="card-title mt-5">Marvel Mystery Matcher</h4>
                     <div className="card-body text-center">
-                      <img
-                        className="img-fluid rounded mb-4"
-                        src={marvelProject}
-                        alt="Marvel Mystery Matcher"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="backside">
-                  <div className="card ">
-                    <div className="card-body text-center mt-4">
-                      <a
-                        className="card-title"
-                        href="https://rfox01.github.io/Group-4-Project-1/index.html"
-                        role="button"
-                        target="blank"
-                      >
-                        Marvel Mystery Matcher
-                      </a>
                       <p className="card-text mt-4">
                         Your personality may meld with many superheroes out
                         there in the Marvel universe. This "mystery matcher"
                         quiz will match you with the Marvel superhero that best
                         suits your personality.
                       </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="backside">
+                  <div className="card">
+                    <div className="card-body text-center mt-">
+                      <a
+                        className="card-title"
+                        href="https://rfox01.github.io/Group-4-Project-1/index.html"
+                        role="button"
+                        target="blank"
+                      >
+                        <img
+                          className="img-fluid rounded"
+                          src={marvelProject}
+                          alt="Marvel Mystery Matcher"
+                        />
+                      </a>
                       <ul className="list-inline">
                         <li className="list-inline-item">
                           <a
-                            className="btn btn-link btn-floating btn-lg text-dark m-1"
-                            href="https://github.com/RFox01/Group-4-Project-1"
+                            className="btn btn-link btn-floating btn-lg text-dark mt-3"
+                            href="https://github.com/appolinefr"
                             target="blank"
                             role="button"
-                            data-mdb-ripple-color="dark"
                           >
-                            <FontAwesomeIcon icon={faGithub} />
+                            <FontAwesomeIcon
+                              icon={faGithub}
+                              className="fa-xl"
+                            />
                           </a>
                         </li>
                       </ul>
@@ -86,7 +85,7 @@ export default function Project() {
             >
               <div className="mainflip">
                 <div className="frontside">
-                  <div className="card border border-3">
+                  <div className="card">
                     <h4 className="card-title mt-4">Merchant Game</h4>
                     <div className="card-body text-center">
                       <img
@@ -140,7 +139,7 @@ export default function Project() {
             >
               <div className="mainflip">
                 <div className="frontside">
-                  <div className="card border border-3">
+                  <div className="card">
                     <h4 className="card-title mt-4">Code Quiz</h4>
                     <div className="card-body text-center">
                       <img
