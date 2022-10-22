@@ -24,7 +24,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           onClick={() => handlePageChange("About")}
         >
           <img src={appoline} alt="Appoline Cogan" height="60" />
-          <span className="m-4 fs-3">Appoline Cogan</span>
+          <span className="m-4 fs-3">AC</span>
         </a>
         <button
           className="navbar-toggler"

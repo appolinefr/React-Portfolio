@@ -13,33 +13,37 @@ const styles = {
 };
 
 export default function Home() {
- const onButtonClick = () => {
-        // using Java Script method to get PDF file
-        fetch(AppolinesResume).then(response => {
-            response.blob().then(blob => {
-                // Creating new object of PDF file
-                const fileURL = window.URL.createObjectURL(blob);
-                // Setting various property values
-                let alink = document.createElement('a');
-                alink.href = fileURL;
-                alink.download = AppolinesResume;
-                alink.click();
-            })
-        })}
+  const onButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch(AppolinesResume).then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = AppolinesResume;
+        alink.click();
+      });
+    });
+  };
+
   return (
     <div>
       <section className="bgimage">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h1 className="text-white text-center mt-5"></h1>
+            </div>
           </div>
         </div>
       </section>
       <div className="container">
         <div className="row">
           <div className="col-6">
-            <div className="container-fluid my-5 text-center">
-              <h1 className="p-4 text-center my-5">My Skills</h1>
+            <div className="container-fluid text-center">
+              <h1 className="my-5">My Skills</h1>
               <span className="badge p-3 m-1 fs-6" style={styles.badge}>
                 HTML
               </span>
@@ -88,9 +92,9 @@ export default function Home() {
             </div>
           </div>
           <div className="col-6">
-            <div className="container-fluid my-5">
-              <h1 className="text-center my-5 ">My Resume</h1>
-              <div className="btnDiv text-center">
+            <div className="container-fluid text-center">
+              <h1 className="my-5 ">My Resume</h1>
+              <div className="btnDiv">
                 <button
                   className="btn btn-secondary mb-5 p-2 fs-5"
                   style={styles.badge}
