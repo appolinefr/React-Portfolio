@@ -1,6 +1,7 @@
 import React from "react";
 import appoline from "../../images/aboutPic.jpeg";
 import FooterContainer from "../Footer";
+import "../../About.css";
 
 export default function About() {
   return (
@@ -16,24 +17,23 @@ export default function About() {
           </div>
         </div>
       </section>
-      <div className="container mt-5">
-            <div className="container d-flex justify-content-center my-5">
-              <img
-                src={appoline}
-                className="rounded"
-                alt="Appoline Cogan"
-                width="300px"
-              />
-              <p className="fs-5 align-self-center mx-5">
-                I am a Full-stack Developper from Melbourne, Australia. I am
-                currently finishing a Full Stack Development bootcamp with
-                Adelaide University! Check out some of my work in the Projects
-                section. I'm open to Job opportunities where I can contribute,
-                learn and grow. If you have a good opportunity that matches my
-                skills and experience then don't hesitate to contact me.
-              </p>
-            </div>
-          </div>
+      <div className="container d-flex justify-content-center my-5 custom">
+        <img
+          src={appoline}
+          className="rounded"
+          alt="Appoline Cogan"
+          width="300px"
+        />
+        <p className="fs-5 d-flex align-self-center my-5 mx-5 flex-wrap">
+          I am a Full-stack Developper from Melbourne, Australia. I am currently
+          finishing a Full Stack Development bootcamp with Adelaide University!
+          Check out some of my work in the Projects section. I'm open to Job
+          opportunities where I can contribute, learn and grow. If you have a
+          good opportunity that matches my skills and experience then don't
+          hesitate to contact me.
+        </p>
+      </div>
+
       <FooterContainer />
     </div>
   );

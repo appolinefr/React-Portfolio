@@ -111,15 +111,6 @@ export default function Home() {
                 >
                   Download Resume
                 </button>
-                <button
-                  className="btn btn-secondary mb-5 mx-2 p-2 fs-5"
-                  style={styles.badge}
-                  id="downloadBtn"
-                  value="download"
-                  onClick={onButtonClick}
-                >
-                  View Resume
-                </button>
               </div>
             </div>
           </div>
