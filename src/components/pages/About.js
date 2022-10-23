@@ -17,30 +17,23 @@ export default function About() {
         </div>
       </section>
       <div className="container mt-5">
-        <div className="row">
-          <div className="col-8 offset-2">
-            <div className="container-fluid">
-              <h1 className="p-4 text-center">About Me </h1>
-              <div className="container">
-                <div className="row">
-                  <div className="col">
-                    <img
-                      src={appoline}
-                      className="card-img-top rounded"
-                      alt="Appoline Cogan"
-                    />
-                  </div>
-                  <div className="col">
-                    <p className="fs-5">
-                      I am a Full-stack Developper from Melbourne, Australia
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <div className="container d-flex justify-content-center my-5">
+              <img
+                src={appoline}
+                className="rounded"
+                alt="Appoline Cogan"
+                width="300px"
+              />
+              <p className="fs-5 align-self-center mx-5">
+                I am a Full-stack Developper from Melbourne, Australia. I am
+                currently finishing a Full Stack Development bootcamp with
+                Adelaide University! Check out some of my work in the Projects
+                section. I'm open to Job opportunities where I can contribute,
+                learn and grow. If you have a good opportunity that matches my
+                skills and experience then don't hesitate to contact me.
+              </p>
             </div>
           </div>
-        </div>
-      </div>
       <FooterContainer />
     </div>
   );

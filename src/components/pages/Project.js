@@ -18,16 +18,19 @@ export default function Project() {
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <h1 className="text-white text-center mt-5">
-               👩🏼‍💻 My Projects
-              </h1>
+              <h1 className="text-white text-center mt-5">👩🏼‍💻 My Projects</h1>
             </div>
           </div>
         </div>
       </section>
       <div className="container mt-5 text-center">
+        <p className="heading">
+          Here you will find some of the personal projects that I have created
+          with each project containing links to the deployed application and the
+          GitHub repo
+        </p>
         <div className="row">
-          <div className="col-xs-12 col-sm-6 col-md-4">
+          <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12">
             <div
               className="image-flip"
               ontouchstart="this.classList.toggle('hover');"
@@ -64,10 +67,11 @@ export default function Project() {
                           alt="Marvel Mystery Matcher"
                         />
                       </a>
+                      <hr />
                       <ul className="list-inline">
                         <li className="list-inline-item">
                           <a
-                            className="btn btn-link btn-floating btn-lg text-dark m-1"
+                            className="text-dark"
                             href="https://github.com/appolinefr"
                             target="blank"
                             role="button"
@@ -85,7 +89,7 @@ export default function Project() {
               </div>
             </div>
           </div>
-          <div className="col-xs-12 col-sm-6 col-md-4">
+          <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12">
             <div
               className="image-flip"
               ontouchstart="this.classList.toggle('hover');"
@@ -122,10 +126,11 @@ export default function Project() {
                           alt="Merchant Game"
                         />
                       </a>
+                      <hr />
                       <ul className="list-inline">
                         <li className="list-inline-item">
                           <a
-                            className="btn btn-link btn-floating btn-lg text-dark m-1"
+                            className="text-dark"
                             href="https://github.com/Wombattree/MerchantGame"
                             target="blank"
                             role="button"
@@ -143,7 +148,7 @@ export default function Project() {
               </div>
             </div>
           </div>
-          <div className="col-xs-12 col-sm-6 col-md-4">
+          <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12">
             <div
               className="image-flip"
               ontouchstart="this.classList.toggle('hover');"
@@ -151,13 +156,13 @@ export default function Project() {
               <div className="mainflip">
                 <div className="frontside">
                   <div className="card">
-                    <h4 className="card-title mt-5">Code Quiz</h4>
+                    <h4 className="card-title mt-5">Work Day Scheduler</h4>
                     <div className="card-body text-center">
                       <p className="card-text mt-4">
-                        A timed coding quiz with multiple-choice questions. This
-                        app with a clean and responsive user interface runs in
-                        the browser and features dynamically updated HTML and
-                        CSS powered by JS code.
+                        Simple calendar application that allows a user to save
+                        events for each hour of the day. This app is running in
+                        the browser and feature dynamically updated HTML and CSS
+                        powered by jQuery.
                       </p>
                       <span className="badge text-bg-secondary p-3 my-4 fs-6">
                         This way for the links 👉
@@ -170,22 +175,22 @@ export default function Project() {
                     <div className="card-body text-center">
                       <a
                         className="card-title"
-                        href="https://appolinefr.github.io/Code-quiz/"
+                        href="https://appolinefr.github.io/Work-Day-Scheduler/"
                         role="button"
                         target="blank"
                       >
                         <img
                           className="img-fluid rounded"
-                          src={codeQuiz}
-                          alt="Code Quiz"
+                          src={workDay}
+                          alt="Work Day Scheduler"
                         />
                       </a>
-
+                      <hr />
                       <ul className="list-inline">
                         <li className="list-inline-item">
                           <a
-                            className="btn btn-link btn-floating btn-lg text-dark m-1"
-                            href="https://github.com/appolinefr/Code-quiz"
+                            className="text-dark"
+                            href="https://github.com/appolinefr/Work-Day-Scheduler"
                             target="blank"
                             role="button"
                           >
@@ -202,7 +207,7 @@ export default function Project() {
               </div>
             </div>
           </div>
-          <div className="col-xs-12 col-sm-6 col-md-4">
+          <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12">
             <div
               className="image-flip"
               ontouchstart="this.classList.toggle('hover');"
@@ -239,10 +244,11 @@ export default function Project() {
                           alt="Note Taker"
                         />
                       </a>
+                      <hr />
                       <ul className="list-inline">
                         <li className="list-inline-item">
                           <a
-                            className="btn btn-link btn-floating btn-lg text-dark m-1"
+                            className="text-dark"
                             href="https://github.com/appolinefr/Note-Taker"
                             target="blank"
                             role="button"
@@ -260,7 +266,7 @@ export default function Project() {
               </div>
             </div>
           </div>
-          <div className="col-xs-12 col-sm-6 col-md-4">
+          <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12">
             <div
               className="image-flip"
               ontouchstart="this.classList.toggle('hover');"
@@ -297,10 +303,11 @@ export default function Project() {
                           alt="Weather Dashboard"
                         />
                       </a>
+                      <hr />
                       <ul className="list-inline">
                         <li className="list-inline-item">
                           <a
-                            className="btn btn-link btn-floating btn-lg text-dark m-1"
+                            className="text-dark"
                             href="https://github.com/appolinefr/Weather-Dashboard"
                             target="blank"
                             role="button"
@@ -318,7 +325,7 @@ export default function Project() {
               </div>
             </div>
           </div>
-          <div className="col-xs-12 col-sm-6 col-md-4">
+          <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12">
             <div
               className="image-flip"
               ontouchstart="this.classList.toggle('hover');"
@@ -326,13 +333,13 @@ export default function Project() {
               <div className="mainflip">
                 <div className="frontside">
                   <div className="card">
-                    <h4 className="card-title mt-5">Work Day Scheduler</h4>
+                    <h4 className="card-title mt-5">Code Quiz</h4>
                     <div className="card-body text-center">
                       <p className="card-text mt-4">
-                        Simple calendar application that allows a user to save
-                        events for each hour of the day. This app is running in
-                        the browser and feature dynamically updated HTML and CSS
-                        powered by jQuery.
+                        A timed coding quiz with multiple-choice questions. This
+                        app with a clean and responsive user interface runs in
+                        the browser and features dynamically updated HTML and
+                        CSS powered by JS code.
                       </p>
                       <span className="badge text-bg-secondary p-3 my-4 fs-6">
                         This way for the links 👉
@@ -342,24 +349,25 @@ export default function Project() {
                 </div>
                 <div className="backside">
                   <div className="card">
-                    <div className="card-body text-center mt-4">
+                    <div className="card-body text-center">
                       <a
                         className="card-title"
-                        href="https://appolinefr.github.io/Work-Day-Scheduler/"
+                        href="https://appolinefr.github.io/Code-quiz/"
                         role="button"
                         target="blank"
                       >
                         <img
                           className="img-fluid rounded"
-                          src={workDay}
-                          alt="Work Day Scheduler"
+                          src={codeQuiz}
+                          alt="Code Quiz"
                         />
                       </a>
+                      <hr />
                       <ul className="list-inline">
                         <li className="list-inline-item">
                           <a
-                            className="btn btn-link btn-floating btn-lg text-dark m-1"
-                            href="https://github.com/appolinefr/Work-Day-Scheduler"
+                            className="text-dark"
+                            href="https://github.com/appolinefr/Code-quiz"
                             target="blank"
                             role="button"
                           >

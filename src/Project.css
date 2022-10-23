@@ -1,3 +1,5 @@
+
+
 .image-flip:hover .backside,
 .image-flip.hover .backside {
   -webkit-transform: rotateY(0deg);
@@ -74,14 +76,34 @@
 }
 
 .frontside h4 {
-  color: #A64B2A;
+  color: #a64b2a;
   font-weight: 600;
   font-size: 24px;
   text-decoration: none;
 }
-
+.backside img{
+  width: 360px;
+}
 .bgimage {
   width: 100%;
   height: 160px;
   background-color: #ac7d88;
 }
+
+.heading {
+  text-align: center;
+  color: #555;
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 1.8rem;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  .frontside {
+  margin-bottom: 60px;
+  }
+  .backside {
+    margin-left: 30px;
+  }
+} 

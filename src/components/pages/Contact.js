@@ -26,19 +26,16 @@ export default function Contact() {
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <h1 className="text-white text-center mt-5">
-                Get in touch ✏️
-              </h1>
+              <h1 className="text-white text-center mt-5">Get in touch ✏️</h1>
             </div>
           </div>
         </div>
       </section>
-
-      <div className="container mt-5 ">
+      <div className="container mt-5">
         <div className="row">
-          <div className="col-6 offset-3">
+          <div className="col-lg-8 offset-lg-2 col-md-12 col-sm-12 col-xs-12 ">
             <div className="container mt-5">
-              <h1 className="" style={styles.title}>
+              <h1 style={styles.title}>
                 Work with me
               </h1>
               <p className="my-4">
