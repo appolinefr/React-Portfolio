@@ -36,7 +36,7 @@ Here are the main requirements of the project:
 
 ### Link to deployed application
 
-[Link to deployed application](https://vast-shelf-62789.herokuapp.com/)
+[Link to deployed application](https://appolinefr.github.io/React-Portfolio/)
 
 ### Screenshot of deployed application
 
