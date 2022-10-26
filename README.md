@@ -11,7 +11,7 @@
 
 ## Description of Project
 
-This challenge was to build a single-page application portfolio using React.
+This project is a single-page application portfolio using React.
 
 ## Project Requirements
 
@@ -31,7 +31,7 @@ Here are the main requirements of the project:
 
 
 ## Challenges
-
+Deploying the application to github pages was initially tricky
 
 
 ### Link to deployed application
