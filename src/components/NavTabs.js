@@ -15,6 +15,13 @@ const styles = {
 };
 
 function NavTabs({ currentPage, handlePageChange }) {
+
+document
+  .querySelector(".navbar-toggler")
+  .addEventListener("click", function (e) {
+    document.querySelector("#navbarSupportedContent").classList.toggle("show");
+  }); 
+
   return (
     <nav className="navbar navbar-expand-lg p-3" style={styles.nav}>
       <div className="container">
