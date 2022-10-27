@@ -28,10 +28,10 @@ Here are the main requirements of the project:
 
 
 ## What I have learned 
-
+I have been able to implement React hooks learned in class as well as new hooks to build my portfolio. I have also learned how to successfully implement bootstrap with React, making sure that my portfolio is fully responsive.
 
 ## Challenges
-Deploying the application to github pages was initially tricky
+Deploying the application to github pages was initially tricky but after going through the steps a few times I was eventually able to implement a successful deployment.
 
 
 ### Link to deployed application
