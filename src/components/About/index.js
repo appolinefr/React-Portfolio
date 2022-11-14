@@ -1,6 +1,5 @@
 import React from "react";
 import appoline from "../../images/aboutPic.jpeg";
-import FooterContainer from "../Footer";
 import "../../About.css";
 
 export default function About() {
@@ -33,8 +32,6 @@ export default function About() {
           hesitate to contact me.
         </p>
       </div>
-
-      <FooterContainer />
     </div>
   );
 }

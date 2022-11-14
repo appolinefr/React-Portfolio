@@ -1,16 +1,16 @@
 import React from "react";
-import appoline from "../../src/images/AppolineNav.png";
+import appoline from "../../images/AppolineNav.png";
 import { Nav, Navbar } from "react-bootstrap";
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <Navbar collapseOnSelect expand="lg p-3">
-      <Navbar.Brand href="#about">
+      <Navbar.Brand href="/">
         <img
           src={appoline}
           alt="Appoline Cogan"
           height="60"
-          onClick={() => handlePageChange("About")}
+          onClick={() => handlePageChange("/about")}
         />
         <span className="m-4 fs-3">AC</span>
       </Navbar.Brand>
@@ -18,22 +18,19 @@ function NavTabs({ currentPage, handlePageChange }) {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ms-auto fs-4 mx-2">
           <Nav.Link
-            href="#about"
-            onClick={() => handlePageChange("About")}
+            href="/"
             className={currentPage === "About" ? "nav-link active" : "nav-link"}
           >
             About
           </Nav.Link>
           <Nav.Link
-            href="#Project"
-            onClick={() => handlePageChange("Project")}
-            className={currentPage === "Blog" ? "nav-link active" : "nav-link"}
+            href="/projects"
+            className={currentPage === "Projects" ? "nav-link active" : "nav-link"}
           >
             Projects
           </Nav.Link>
           <Nav.Link
-            href="#contact"
-            onClick={() => handlePageChange("Contact")}
+            href="/contact"
             className={
               currentPage === "Contact" ? "nav-link active" : "nav-link"
             }
@@ -41,8 +38,7 @@ function NavTabs({ currentPage, handlePageChange }) {
             Contact
           </Nav.Link>
           <Nav.Link
-            href="#resume"
-            onClick={() => handlePageChange("Resume")}
+            href="/resume"
             className={
               currentPage === "Resume" ? "nav-link active" : "nav-link"
             }

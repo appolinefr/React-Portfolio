@@ -1,5 +1,4 @@
 import React from "react";
-import FooterContainer from "../Footer";
 import { useForm } from "react-hook-form";
 
 const styles = {
@@ -35,9 +34,7 @@ export default function Contact() {
         <div className="row">
           <div className="col-lg-8 offset-lg-2 col-md-12 col-sm-12 col-xs-12 ">
             <div className="container mt-5">
-              <h1 style={styles.title}>
-                Work with me
-              </h1>
+              <h1 style={styles.title}>Work with me</h1>
               <p className="my-4">
                 If you like what you see and would like to work with me, please
                 fill out the form below and I will get back to you.
@@ -80,7 +77,6 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <FooterContainer />
       </div>
     </div>
   );

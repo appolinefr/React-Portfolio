@@ -5,13 +5,12 @@ import merchantGame from "../../images/merchantGame.png";
 import weatherDashboard from "../../images/weather-dashboard.png";
 import workDay from "../../images/work-day.png";
 import noteTaker from "../../images/note-taker.png";
-import FooterContainer from "../Footer";
 import "../../Project.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-export default function Project() {
+export default function Projects() {
   return (
     <div>
       <section className="bgimage">
@@ -385,7 +384,6 @@ export default function Project() {
             </div>
           </div>
         </div>
-        <FooterContainer />
       </div>
     </div>
   );

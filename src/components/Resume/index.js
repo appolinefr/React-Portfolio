@@ -1,6 +1,5 @@
 import React from "react";
-import FooterContainer from "../Footer";
-import AppolinesResume from "../../images/AppolinesResume.pdf";
+import AppolinesResume from "../../pdf/AppolinesResume.pdf";
 
 const styles = {
   badge: {
@@ -115,7 +114,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <FooterContainer />
       </div>
     </div>
   );
