@@ -11,7 +11,7 @@
 
 ## Description of Project
 
-This project is a single-page application portfolio using React.
+This project is a single-page application portfolio using React. It features all the most important projects I have been working on as part of my full stack bootcamp.
 
 ## Project Requirements
 
